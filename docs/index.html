@@ -15,14 +15,31 @@
             class="row justify-content-center align-items-center g-2"
         >
             <div class="col"><div class="card">
-                <img class="card-img-top" src="holder.js/100x180/" alt="Enter your deck" />
                 <div class="card-body">
-                    <h4 class="card-title">Enter your deck</h4>
-                    <p class="card-text">Paste a decklist</p>
+                    <h4 class="card-title">Your deck</h4>
+                    <div class="mb-3">
+                        <label for="decklist" class="form-label">Paste your decklist</label>
+                        <textarea class="form-control" name="decklist" id="decklist" rows="10" placeholder="1 Sol Ring
+99 Island"></textarea>
+                        <input
+                            name="fetch-deck-data"
+                            id="fetch-deck-data"
+                            class="btn btn-primary"
+                            type="button"
+                            value="Fetch data"
+                        />
+                    </div>
+
                 </div>
             </div>
             </div>
-            <div class="col">Deck display</div>
+            <div class="col"><div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Fetched decklist</h4>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+            </div>
         </div>
         <div
             class="row justify-content-center align-items-center g-2"
